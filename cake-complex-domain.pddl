@@ -26,5 +26,4 @@
       :precondition (dirty)
       :effect (not (dirty))
   )
-  
 )

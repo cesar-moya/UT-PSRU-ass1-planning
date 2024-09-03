@@ -1,0 +1,6 @@
+(move knight x1 y1 x3 y2)
+(move knight x3 y2 x4 y4)
+(move knight x4 y4 x6 y5)
+(move knight x6 y5 x5 y7)
+(move knight x5 y7 x7 y8)
+; cost = 5 (unit cost)

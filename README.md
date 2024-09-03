@@ -4,25 +4,22 @@ In this assignment, you will use PDDL to formally define domains and problem des
 
 **Important**: We will only work with the STRIPS subset of the PDDL 1.2 specifications for this assignment. The only requirement your PDDL files should include is `(:requirements :strips)` .
 
-## Part 1: Getting started
+**Getting started**
 
 For this assignment, you will use the [FastDownward](https://www.fast-downward.org/) planning system to design and test planning domains and problems. Note: version >= 23.06 compiles using the C++20 standard. The autograder runs version 22.12.
 
-To get the planner and compile it:  If you run into issues, 
+To get the planner and compile it:
 
-1. Install dependencies as listed in the [FastDownard build instructions](https://github.com/aibasel/downward/blob/main/BUILD.md).
-   - **Windows users**:  Make sure to install the [Visual Studio Build Tools Supporting C++](https://aka.ms/vs/17/release/vs_BuildTools.exe). These are also contained in the "Desktop development with C++" workload that you can download via the Visual Studio Installer. You may also need to create a new, empty C++ project for the libraries to register.
-3. Clone the code for fast-downward:
+1. Clone the code for fast-downward:
    ``` 
     git clone <https://github.com/aibasel/downward.git>  
     cd downward
     git checkout origin/release-22.12
    ```
-4. Compile using the provided build script:  
+3. Compile using the provided build script:  
     ```
     ./build.py
     ```
-    - **Windows users**:  See the FastDownward build instructions above.
 
 To run the planner and check the results:
 
@@ -34,14 +31,14 @@ To run the planner and check the results:
    ``` 
     ./fast-downward.py --alias lama-first cake-domain.pddl cake-problem.pddl
    ```
-2. If a plan is found, it will be saved in the file sas_plan by default. You can inspect the plan in the file:  
+3. If a plan is found, it will be saved in the file sas_plan by default. You can inspect the plan in the file:  
     `cat sas_plan`
 
 References:
 - FastDownward project website: <https://www.fast-downward.org/>
 - Repository for FastDownward: <https://github.com/aibasel/downward>
 - FastDownward supported PDDL features list: <https://planning.wiki/ref/planners/fd>
-- Environment setup Dependencies: <https://github.com/aibasel/downward/blob/main/BUILD.md>
+- Environment setup Dependencies: <https://www.fast-downward.org/ObtainingAndRunningFastDownward>
 
 
 ## Part 1: Complex Eat-Cake
@@ -144,7 +141,8 @@ The final condition should be for knight1 and knight2 to swap positions.
 **What to turn in**: The file `dual-knights-problem.pddl` , which must be compatible with your `single-knight-domain.pddl` from part 3.
 
 # Submission Instructions
-Place the following files into a flat zip file (no directories) and submit in Gradescope under AI388U-assignment1:
+Please put files mentioned in "What to turn in" into zip file, and submit the zip file in Gradescope under AI388U-assignment1.
+Your zip file should include the following files:
 1. `cake-complex-domain.pddl` for part 1.1
 2. `cake-complex-problem.pddl` for part 2.2
 3. `single-king-domain.pddl` for part 2.1
